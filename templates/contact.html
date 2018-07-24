@@ -1,0 +1,67 @@
+	<!DOCTYPE html>
+<html>
+
+<header>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<title>Contact</title>
+</header>
+
+<body>
+<h1>Contact</h1>
+<div class="navbar">
+	<a href="/">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">About
+				<i class="fa fa-caret-down"></i>
+			</button>
+		<div class="dropdown-content">
+				<a href="/african">African Elephants</a>
+				<a href="/asian">Asian Elephants</a>
+			</div>
+		</div>
+		<a href="/conservation">Conservation & Threats</a>
+		<a href="/contact">Contact</a>
+	</div>
+
+
+<p id="greeting"><strong>Say Hello!</strong></p>
+<p id="First">Fill in the form to get in touch:</p>
+<div class="container">
+      <form action="mailto:emma.riddell89@gmail.com " method="post" enctype="text/plain">
+      	<br>
+        <input type="name" placeholder="Name"><br>
+
+    	<br>
+       <input type="email" placeholder="Your email"></br>
+       <br>
+
+        <input type="text" name="comment" size="20" id="txtbox" placeholder="Message"><br><br>
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+<p><a href="https://twitter.com/intent/tweet?button_hashtag=ElephantsInCrisis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="en" data-show-count="false">Tweet #ElephantsInCrisis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+
+<p> Follow Born Free Foundation on Facebook or Instagram: </p>
+        <a href="https://www.facebook.com/bornfreefoundation/" class="fa fa-facebook"</a>
+        <a href="https://www.instagram.com/bornfreefoundation/?hl=en" class="fa fa-instagram"</a></br>
+
+
+<p>Tweets:
+	{% for tweet in elly_tweets %}
+			<p> {{tweet.text}} </br>
+
+	{% endfor %}
+
+
+</p>
+
+
+</body>
+
+
+</html>
