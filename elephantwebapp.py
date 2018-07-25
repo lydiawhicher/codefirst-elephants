@@ -35,10 +35,10 @@ def twitter():
     auth.set_access_token ("33679048-GhUnRhh1biI7bX4Dq1bdT4IJrSAxCfMX8vlRBXQWB", "BJPaAMNeAtyxHBkARbDiFKgjRnB4hByy664OBRNoiTnrl")
     twitter_api = tweepy.API(auth)
     cfg_tweets = twitter_api.search(
-    q = "ElephantsInCrisis" #Twitter handle you want to search by
+    q = "ElephantConservation" #Twitter handle you want to search by
     )
-    #for tweet in cfg_tweets:
-    #    print tweet.user.name + ":" + tweet.text + "\n"
+    for tweet in cfg_tweets:
+    print tweet.user.name + ":" + tweet.text + "\n"
 
     return render_template(
         "contact.html",elly_tweets = cfg_tweets)  # render_template method is a special function flask which redirect to the html file mentioned in the paramter
