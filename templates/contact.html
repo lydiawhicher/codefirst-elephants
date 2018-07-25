@@ -25,11 +25,6 @@
 		<a href="/contact">Contact</a>
 	</div>
 
-<p> Follow Born Free Foundation on Facebook or Instagram: </p>
-        <a href="https://www.facebook.com/bornfreefoundation/" class="fa fa-facebook"</a>
-	 <a href="https://www.instagram.com/bornfreefoundation/?hl=en" class="fa fa-instagram"</a></br>
-
-</div>
 
 
 <p id="greeting"><strong>Say Hello!</strong></p>
@@ -52,19 +47,24 @@
 	
 <div class="container">
 
+	<p> Follow Born Free Foundation on Facebook or Instagram: </p>
+        <a href="https://www.facebook.com/bornfreefoundation/" class="fa fa-facebook"</a>
+	 <a href="https://www.instagram.com/bornfreefoundation/?hl=en" class="fa fa-instagram"</a></br>
+
+</div>
 
 <div id="pytweets">
 	
 <p><a href="https://twitter.com/intent/tweet?button_hashtag=ElephantsInCrisis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="en" data-show-count="false">Tweet #ElephantsInCrisis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p></br>
 	
-<p>Lastest Tweets:
+<h1>Latest Tweets:
 	{% for tweet in elly_tweets %}
 		<p> {{tweet.text}} </br>
 
 	{% endfor %}
 
 </p>
-</p>
+<h1>
 
 </div>
 
