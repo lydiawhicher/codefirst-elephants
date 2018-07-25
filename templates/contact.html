@@ -42,24 +42,30 @@
         <input type="submit" value="Send">
       </form>
     </div>
-
-<p><a href="https://twitter.com/intent/tweet?button_hashtag=ElephantsInCrisis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="en" data-show-count="false">Tweet #ElephantsInCrisis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
+	
+	
+<div class="container">
 
 <p> Follow Born Free Foundation on Facebook or Instagram: </p>
         <a href="https://www.facebook.com/bornfreefoundation/" class="fa fa-facebook"</a>
         <a href="https://www.instagram.com/bornfreefoundation/?hl=en" class="fa fa-instagram"</a></br>
+</div>
 
 
+<div id="pytweets">
+	
+<p><a href="https://twitter.com/intent/tweet?button_hashtag=ElephantsInCrisis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="en" data-show-count="false">Tweet #ElephantsInCrisis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+	
 <p>Tweets:
 	{% for tweet in elly_tweets %}
 		<p> {{tweet.text}} </br>
 
 	{% endfor %}
 
-
+</p>
 </p>
 
+</div>
 
 </body>
 
