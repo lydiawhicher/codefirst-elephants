@@ -37,8 +37,8 @@ def twitter():
     cfg_tweets = twitter_api.search(
     q = "ElephantConservation" #Twitter handle you want to search by
     )
-    for tweet in cfg_tweets:
-    print tweet.user.name + ":" + tweet.text + "\n"
+    # for tweet in cfg_tweets:
+    # print tweet.user.name + ":" + tweet.text + "\n"
 
     return render_template(
         "contact.html",elly_tweets = cfg_tweets)  # render_template method is a special function flask which redirect to the html file mentioned in the paramter
